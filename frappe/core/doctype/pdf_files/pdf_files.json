@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "creation": "2021-09-30 18:40:35.554029",
+ "description": "To store the PDF for receipt,Invoice,and Purchase Order",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "file_name",
+  "file_size",
+  "section_break_3",
+  "s3_url",
+  "file_type",
+  "column_break_6",
+  "attached_to_doctype",
+  "attached_to_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "File Name"
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Int",
+   "label": "File Size"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "s3_url",
+   "fieldtype": "Code",
+   "label": "S3 Url"
+  },
+  {
+   "fieldname": "file_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "File Type",
+   "options": "Invoice\nReceipt\nPurchase Order"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attached_to_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attached To Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "attached_to_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attached To Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-30 18:40:35.554029",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "PDF Files",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
